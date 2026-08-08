@@ -15,7 +15,7 @@ identity = st.selectbox("请选择您的身份", ["消费者（购买用户）",
 if identity == "消费者（购买用户）":
     st.header("🛒 消费者产品选购专区")
     st.subheader("全部东三省农产品介绍与售价（完整数据表）")
-    consumer_df = df[["产品名称", "产品分类", "产地", "单价", "富硒等级", "上市季节"]]
+    consumer_df = df[["产品分类", "产品名称", "产地", "单价", "产销等级", "上市季节"]]
     st.dataframe(consumer_df, use_container_width=True)
     st.divider()
     st.subheader("📖 农产品百科图文详情（下方可查看单品图文介绍）")
