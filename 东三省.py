@@ -7,7 +7,7 @@ import io
 
 st.set_page_config(page_title="东三省农产品产销便民服务平台", layout="wide")
 st.title("东三省农产品产销便民服务平台")
-df = pd.read_csv("黑龙江特色农产品销售信息表.csv", encoding="gbk")
+df = pd.read_csv("datadong.csv", encoding="utf-8")
 st.success("数据加载完成，可切换下方板块查看对应内容")
 identity = st.selectbox("请选择您的身份", ["消费者（购买用户）", "经销商（收购商）", "农户（种植户）"])
 
