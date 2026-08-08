@@ -23,7 +23,7 @@ if identity == "消费者（购买用户）":
     st.divider()
     for index, row in df.iterrows():
         product_name = row["产品名称"]
-        img_path = f"./东三省/{product_name}.jpg"
+        img_path = f"./东三省图片/{product_name}.jpg"
         col1, col2 = st.columns([1, 3])
         with col1:
             if os.path.exists(img_path):
